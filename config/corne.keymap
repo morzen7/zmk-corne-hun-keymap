@@ -64,7 +64,7 @@
 //                    | CTRL | LWR | SPC |   | ENT | RSE  | SHIFT |
                         label = "F_Keys";
                         bindings = <
-   &trans   &trans &kp F1 &kp F2  &kp F4  &kp F4    &kp HOME &kp UP   &kp PG_UO  &trans &trans  &trans
+   &trans   &trans &kp F1 &kp F2  &kp F4  &kp F4    &kp HOME &kp UP   &kp PG_UP  &trans &trans  &trans
    &trans   &trans &kp F5 &kp F6  &kp F7  &kp F8    &kp LEFT &trans   &kp RIGHT  &trans &trans  &trans
    &trans   &trans &kp F9 &kp F10 &kp F11 &kp F12   &kp END  &kp DOWN &kp PG_DN  &trans &trans  &trans
                              &trans &trans &trans   &trans &trans &trans
