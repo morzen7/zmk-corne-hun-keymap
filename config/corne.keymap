@@ -28,15 +28,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |    |  BT_CLR | BT1 | HOME| UP  |PG UP|   |     |  7  |  8  |  9   |  ESC |      |
-// |    |         | BT2 | LFT |     | RGT |   |     |  4  |  5  |  6   | BKSP |      |
-// |    |         | BT3 | END | DWN |PG DN|   |  0  |  1  |  2  |  3   |  DEL |      |
+// |    |  BT1 | BT4 | HOME| UP  |PG UP|   |     |  7  |  8  |  9   |  ESC |      |
+// |    |  BT2 | BT5 | LFT |     | RGT |   |     |  4  |  5  |  6   | BKSP |      |
+// |    |  BT3 |     | END | DWN |PG DN|   |  0  |  1  |  2  |  3   |  DEL |      |
 //                    | GUI |     | SPC |   | ENT | F_KEYS | ALT |
                         label = "Lower";
                         bindings = <
-   &trans  &bt BT_CLR &bt BT_SEL 0  &kp HOME  &kp UP   &kp PG_UP  &trans   &kp N7  &kp N8  &kp N9    &kp ESC   &trans
-   &trans  &trans     &bt BT_SEL 1  &kp LEFT  &trans   &kp RIGHT  &trans   &kp N4  &kp N5  &kp N6    &kp BSPC  &trans
-   &trans  &trans     &bt BT_SEL 2  &kp END   &kp DOWN &kp PG_DN  &kp N0   &kp N1  &kp N2  &kp N3    &kp DEL   &trans
+   &trans  &bt BT_SEL 0  &bt BT_SEL 3  &kp HOME  &kp UP   &kp PG_UP  &trans   &kp N7  &kp N8  &kp N9    &kp ESC   &trans
+   &trans  &bt BT_SEL 1  &bt BT_SEL 4  &kp LEFT  &trans   &kp RIGHT  &trans   &kp N4  &kp N5  &kp N6    &kp BSPC  &trans
+   &trans  &bt BT_SEL 2  &trans        &kp END   &kp DOWN &kp PG_DN  &kp N0   &kp N1  &kp N2  &kp N3    &kp DEL   &trans
                           	&kp LGUI     &trans       &kp SPACE      &kp RET  &mo 3   &kp RALT
                         >;
                 };
@@ -52,22 +52,22 @@
    &trans &kp TAB    &kp AT   &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
    &trans &kp LSHFT  &kp EXCL &kp GRAVE &kp TILDE &kp SQT    &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &trans
    &trans &kp LCTRL  &trans   &trans    &trans    &trans    &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &trans
-                    	     &kp LGUI &mo 2   &kp SPACE   &kp RET   &trans    &kp RALT
+                    	     &kp LGUI &mo 3   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
 
                 f_keys_layer {
 // -----------------------------------------------------------------------------------------
-// |    |     |  f1  |  f2  |  f3 |  f4  |   |  HOME |  UP   |  PG UP |    |    |    |
-// |    |     |  f5  |  f6  |  f7 |  f8  |   |  LFT  |       |  RGT   |    |    |    |
-// |    |     |  f9  |  f10 | f11 |  f12 |   |  END  |  DWN  |  PG DN |    |    |    |
-//                    | CTRL | LWR | SPC |   | ENT | RSE  | SHIFT |
+// |    |     |  f1  |  f2  |  f3 |  f4  |   |  HOME |  UP   |  PG UP |    | BT_CLR|    |
+// |    |     |  f5  |  f6  |  f7 |  f8  |   |  LFT  |       |  RGT   |    |       |    |
+// |    |     |  f9  |  f10 | f11 |  f12 |   |  END  |  DWN  |  PG DN |    |       |    |
+//                    |     |    |    |   |   |    | ALT |
                         label = "F_Keys";
                         bindings = <
-   &trans   &trans &kp F1 &kp F2  &kp F3  &kp F4    &kp HOME &kp UP   &kp PG_UP  &trans &trans  &trans
-   &trans   &trans &kp F5 &kp F6  &kp F7  &kp F8    &kp LEFT &trans   &kp RIGHT  &trans &trans  &trans
-   &trans   &trans &kp F9 &kp F10 &kp F11 &kp F12   &kp END  &kp DOWN &kp PG_DN  &trans &trans  &trans
-                             &trans &trans &trans   &trans &trans &trans
+   &trans   &trans &kp F1 &kp F2  &kp F3  &kp F4    &kp HOME &kp UP   &kp PG_UP  &trans &bt BT_CLR  &trans
+   &trans   &trans &kp F5 &kp F6  &kp F7  &kp F8    &kp LEFT &trans   &kp RIGHT  &trans &trans      &trans
+   &trans   &trans &kp F9 &kp F10 &kp F11 &kp F12   &kp END  &kp DOWN &kp PG_DN  &trans &trans      &trans
+                             &trans &trans &trans   &trans &trans &kp RALT
                         >;
                 };
 
