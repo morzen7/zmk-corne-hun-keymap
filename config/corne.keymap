@@ -17,13 +17,13 @@
 // |    |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |    |
 // |    |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    |
 // |    |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |    |
-//                    | CTRL | LWR | SPC |   | ENT | RSE  | SHIFT |
+//                    | SHIFT | LWR | SPC |   | ENT | RSE  | CTRL |
                         label = "Base";
                         bindings = <
    &trans   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &trans
    &trans   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &trans
    &trans   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &trans
-                  &kp LCTRL &mo 1 &kp SPACE   &kp RET &mo 2 &kp LSHIFT
+                  &kp LSHIFT &mo 1 &kp SPACE   &kp RET &mo 2 &kp LCTRL
                         >;
                 };
                 lower_layer {
@@ -64,7 +64,7 @@
 //                    | CTRL | LWR | SPC |   | ENT | RSE  | SHIFT |
                         label = "F_Keys";
                         bindings = <
-   &trans   &trans &kp F1 &kp F2  &kp F4  &kp F4    &kp HOME &kp UP   &kp PG_UP  &trans &trans  &trans
+   &trans   &trans &kp F1 &kp F2  &kp F3  &kp F4    &kp HOME &kp UP   &kp PG_UP  &trans &trans  &trans
    &trans   &trans &kp F5 &kp F6  &kp F7  &kp F8    &kp LEFT &trans   &kp RIGHT  &trans &trans  &trans
    &trans   &trans &kp F9 &kp F10 &kp F11 &kp F12   &kp END  &kp DOWN &kp PG_DN  &trans &trans  &trans
                              &trans &trans &trans   &trans &trans &trans
