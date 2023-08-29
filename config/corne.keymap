@@ -61,13 +61,13 @@
 // |    |     |  f1  |  f2  |  f3 |  f4  |   |  HOME |  UP   |  PG UP |    | BT_CLR|    |
 // |    |     |  f5  |  f6  |  f7 |  f8  |   |  LFT  |       |  RGT   |    |       |    |
 // |    |     |  f9  |  f10 | f11 |  f12 |   |  END  |  DWN  |  PG DN |    |       |    |
-//                    |     |    |    |   |   |    | ALT |
+//                    |  GUI |    |    |   |   |    | ALT |
                         label = "F_Keys";
                         bindings = <
    &trans   &trans &kp F1 &kp F2  &kp F3  &kp F4    &kp HOME &kp UP   &kp PG_UP  &trans &bt BT_CLR  &trans
    &trans   &trans &kp F5 &kp F6  &kp F7  &kp F8    &kp LEFT &trans   &kp RIGHT  &trans &trans      &trans
    &trans   &trans &kp F9 &kp F10 &kp F11 &kp F12   &kp END  &kp DOWN &kp PG_DN  &trans &trans      &trans
-                             &trans &trans &trans   &trans &trans &kp RALT
+                             &kp LGUI &trans &trans   &trans &trans &kp RALT
                         >;
                 };
 
