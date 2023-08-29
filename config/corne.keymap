@@ -17,40 +17,40 @@
 // |    |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |    |
 // |    |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    |
 // |    |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |    |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+//                    | CTRL | LWR | SPC |   | ENT | RSE  | SHIFT |
                         label = "Base";
                         bindings = <
    &trans   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &trans
    &trans   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &trans
    &trans   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &trans
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                  &kp LCTRL &mo 1 &kp SPACE   &kp RET &mo 2 &kp LSHIFT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |    |  1       |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0   |      |
-// |    | BT1      | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | BKSP |      |
-// |    | BT_CLR   |     |     |     |     |   |     |     |     |     |      |      |
+// |    |  BT_CLR | BT1 | HOME| UP  |PG UP|   |     |  7  |  8  |  9   |  ESC |      |
+// |    |         | BT2 | LFT |     | RGT |   |     |  4  |  5  |  6   | BKSP |      |
+// |    |         | BT3 | END | DWN |PG DN|   |  0  |  1  |  2  |  3   |  DEL |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         label = "Lower";
                         bindings = <
-   &trans  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &trans
-   &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSPC &trans
-   &trans  &bt BT_CLR   &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans   &trans
+   &trans  &bt BT_CLR &bt BT_SEL 0  &kp HOME  &kp UP   &kp PG_UP  &trans   &kp N7  &kp N8  &kp N9    &kp ESC   &trans
+   &trans  &trans     &bt BT_SEL 1  &kp LEFT  &trans   &kp RIGHT  &trans   &kp N4  &kp N5  &kp N6    &kp BSPC  &trans
+   &trans  &trans     &bt BT_SEL 2  &kp END   &kp DOWN &kp PG_DN  &kp N0   &kp N1  &kp N2  &kp N3    &kp DEL   &trans
                           	&kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  TAB  |  @   |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// |      | SHIFT |  !   |  `  |  ~  |     |   |  -  |  =  |  [  |  ]  |  \  |      |
-// |      | CTRL  |      |     |     |     |   |  _  |  +  |  {  |  }  | "|" |      |
-//                     | GUI |     | SPC |   | ENT |     | ALT |
+// |      |  TAB  |  @  |  #   |  $   |  %   |   |  ^  |  &  |  *  |  (  |  )  |      |
+// |      | SHIFT |  !  |  `   |  ~   |  '   |   |  -  |  =  |  [  |  ]  |  \  |      |
+// |      | CTRL  |     |      |      |      |   |  _  |  +  |  {  |  }  | "|" |      |
+//                       | GUI |     | SPC |   | ENT |     | ALT |
                         label = "Raise";
                         bindings = <
    &trans &kp TAB    &kp AT   &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
-   &trans &kp LSHFT  &kp EXCL &kp GRAVE &kp TILDE &trans    &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &trans
+   &trans &kp LSHFT  &kp EXCL &kp GRAVE &kp TILDE &kp SQT    &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &trans
    &trans &kp LCTRL  &trans   &trans    &trans    &trans    &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &trans
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
