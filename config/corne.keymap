@@ -9,12 +9,20 @@
 #include <dt-bindings/zmk/bt.h>
 / {
         combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp LGUI>;
-            };
+                compatible = "zmk,combos";
+                combo_esc {
+                    timeout-ms = <50>;
+                    key-positions = <0 1>;
+                    bindings = <&kp ESC>;
+                    };
+
+                combo_enter {
+                    timeout-ms = <50>;
+                    key-positions = <2 3 4>;
+                    bindings = <&kp ENTER>;
+                    };
+
+        
         };
         
         keymap {
