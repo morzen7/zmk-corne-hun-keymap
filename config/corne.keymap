@@ -82,14 +82,14 @@
                         label = "Raise";
                         bindings = <
 //        ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬──────────────┬─────────────┬─────────────────╮
-//        |             |             |             |             |             | |  ^          |  &          | *            |             |                 |     
-   &trans    &trans        &trans        &trans        &trans         &trans         &kp CARET     &kp AMPS    &kp KP_MULTIPLY   &trans       &trans           &trans
+//        |             |             | PAGE UP /UP |             |             | |             |  ^          |  &          | *            |                 |     
+   &trans    &trans        &trans       &hm PG_UP UP   &trans         &trans         &trans        &kp CARET     &kp AMPS    &kp KP_MULTIPLY  &trans           &trans
 //        ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────────┤
-//        |             |             |             |             |             | |  \          |  `          | ~            |             |                 |     
-   &trans    &trans        &trans        &trans        &trans        &trans          &kp BSLH      &kp GRAVE    &kp TILDE       &trans        &trans           &trans
+//        |             | HOME / LEFT |  TAB        | END/ RIGHT  |             | |             |  \          |  `          | ~            |                 |     
+   &trans    &trans      &hm HOME LEFT   &kp TAB      &hm END RIGHT   &trans          &trans        &kp BSLH      &kp GRAVE    &kp TILDE       &trans           &trans
 //        ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────────┤
-//        | HOME / LEFT | END/ RIGHT  | PAGE UP /UP | PG_DN/DOWN  |  TAB        | |  "|"        |  $          | %            |             |                 |     
-   &trans  &hm HOME LEFT &hm END RIGHT  &hm PG_UP UP &hm PG_DN DOWN  &kp TAB         &kp PIPE      &kp DLLR     &kp PRCNT       &trans        &trans           &trans
+//        |             |             | PG_DN/DOWN  |             |             | |             |  "|"        |  $          | %            |                 |     
+   &trans   &trans        &trans        &hm PG_DN DOWN &trans         &trans          &trans        &kp PIPE      &kp DLLR     &kp PRCNT       &trans           &trans
 //        ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────┴─────────────────╯
 //                                    |             |             |  SPACE      | |  ENTER      |             |  ALT         |   
                                         &kp LGUI         &mo 3       &kp SPACE       &kp RET       &trans        &kp RALT
