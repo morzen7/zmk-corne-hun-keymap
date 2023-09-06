@@ -83,7 +83,7 @@
                         bindings = <
 //        ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬──────────────┬─────────────┬─────────────────╮
 //        |             |             | PAGE UP /UP |             | PRINTSCREEN | |             |  ^          |  &          | *            |                 |     
-   &trans    &trans        &trans       &hm PG_UP UP   &trans        &kp PSCRN         &trans        &kp CARET     &kp AMPS   &kp KP_MULTIPLY   &trans           &trans
+   &trans    &trans        &trans       &hm PG_UP UP   &trans      &kp PRINTSCREEN   &trans        &kp CARET     &kp AMPS   &kp KP_MULTIPLY   &trans           &trans
 //        ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────────┤
 //        |             | HOME / LEFT |  TAB        | END/ RIGHT  |             | |             |  \          |  `           |  ~          |                 |     
    &trans    &trans      &hm HOME LEFT   &kp TAB      &hm END RIGHT   &trans          &trans        &kp BSLH     &kp GRAVE     &kp TILDE       &trans           &trans
