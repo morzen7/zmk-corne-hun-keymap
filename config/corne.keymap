@@ -88,8 +88,8 @@
 //        |  SHIFT      |  !          |  `          |  ~          |  '          | |  -          |  =          |  [           |  ]          |  \              |     
    &trans    &kp LSHIFT    &kp EXCL      &kp GRAVE     &kp TILDE     &kp SQT         &kp MINUS     &kp EQUAL     &kp LBKT       &kp RBKT      &kp BSLH         &trans
 //        ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────┼─────────────────┤
-//        |  CTRL       |             |             |             |             | |  _          |  +          |   {          |  }          |  "|"            |     
-   &trans    &kp LCTRL     &trans        &trans        &trans        &trans          &kp UNDER     &kp PLUS       &kp LBRC      &kp RBRC      &kp PIPE         &trans
+//        |  CTRL       | HOME / LEFT | END/ RIGHT  | PAGE UP /UP | PG_DN/DOWN  | |  _          |  +          |   {          |  }          |  "|"            |     
+   &trans    &kp LCTRL   &hm HOME LEFT &hm END RIGHT  &hm PG_UP UP &hm PG_DN DOWN    &kp UNDER     &kp PLUS       &kp LBRC      &kp RBRC      &kp PIPE         &trans
 //        ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────┴─────────────────╯
 //                                    |             |             |  SPACE      | |  ENTER      |             |  ALT         |   
                                            &kp LGUI      &mo 3       &kp SPACE       &kp RET       &trans        &kp RALT
