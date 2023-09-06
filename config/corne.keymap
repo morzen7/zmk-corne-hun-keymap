@@ -13,12 +13,26 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
+
+        combos{
+                compatible = "zmk,combos";
+                combo_enter {
+                    timeout-ms = <50>;
+                    key-positions = <8 9>;
+                    bindings = <&kp ENTER>;
+                };
+                combo_esc {
+                    timeout-ms = <50>;
+                    key-positions = <1 2>;
+                    bindings = <&kp ESC>;
+                };
+        };
         
         keymap {
                 compatible = "zmk,keymap";
