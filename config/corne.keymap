@@ -66,7 +66,7 @@
     &trans    &kp PIPE       &kp AT        &kp SQT       &kp LPAR      &kp RPAR         &kp PLUS      &kp N7       &kp N8       &kp N9         &kp ESC       &trans  
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  \          |  #          |  "          |  [          |  ]          | |   =         |   4         |  5          | 6           | BACKSPACE   |     
-    &trans     kp BSLH       &kp HASH      &kp DQT       &kp LBKT      &kp RBKT         &kp EQUAL     &kp N4       &kp N5       &kp N6        &kp BSPC       &trans 
+    &trans     &kp BSLH      &kp HASH      &kp DQT       &kp LBKT      &kp RBKT         &kp EQUAL     &kp N4       &kp N5       &kp N6        &kp BSPC       &trans 
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  ?          |  !          |  _          |  {          |  }          | |   -         |   1         |  2          | 3           | DEL         |     
     &trans     &kp QMARK     &kp EXCL      &kp UNDER     &kp LBRC      &kp RBRC         &kp MINUS     &kp N1       &kp N2       &kp N3        &kp DEL        &trans   
@@ -89,7 +89,7 @@
    &trans    &trans      &hm HOME LEFT   &kp TAB        &hm END RIGHT   &trans               &trans       &kp GRAVE     &kp PRCNT     &kp KP_MULTIPLY     &trans          &trans
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────────┼─────────────────┤
 //        |             |             | PG_DN/DOWN    |              |                 | |             |  ~          |  $           |                 |                 |     
-   &trans    &trans       &trans        &hm PG_DN DOWN   &trans        &trans               &trans       &kp TILDE     &kp DLLR      &trans              &trans           &trans
+   &trans    &trans       &trans        &hm PG_DN DOWN   &trans        &trans               &trans        &kp TILDE     &kp DLLR      &trans              &trans           &trans
 //        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────────┴─────────────────╯
 //                                    |               |              |  SPACE          | |  ENTER      |             |  ALT         |   
                                         &kp LGUI         &mo 3          &kp SPACE           &kp RET       &trans        &kp RALT
