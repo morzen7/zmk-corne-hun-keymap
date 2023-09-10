@@ -42,7 +42,7 @@
                         bindings = <
 //          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //          |  q          |  w          |  e   é      |  r          |  t          | |  z          |  u    ú     |  i   í      |  o  ó       |  p          |  
-     &trans    &kp Q         &kp W         &hm SEMI      &kp R         &kp T           &kp Y        &hm RBKT U    &hm GRAVE I    &hm EQUAL O   &kp P         &trans      
+     &trans    &kp Q         &kp W         &hm SEMI e    &kp R         &kp T           &kp Y        &hm RBKT U    &hm GRAVE I    &hm EQUAL O   &kp P         &trans      
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  a    á     |  s   GUI    |  d   ALT    |  f   SHIFT  |  g   CTRL   | |  h          |  j          |  k          |  l          |  ü   ű      |    
      &trans   &hm SQT A    &hm LGUI S     &hm LALT D    &hm LSHIFT F  &hm LCTRL G      &kp H         &kp J         &kp K         &kp L       &hm BSLH MINUS  &trans  
@@ -72,9 +72,29 @@
     &trans     &trans        &trans        &trans       &trans         &trans          &trans         &kp N1       &kp N2       &kp N3        &kp DEL        &trans   
 //          ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                      |             |             |  SPACE      | |  ENTER      |             |  ALT        |     
-                                           &kp LGUI       &trans       &kp SPACE       &kp RET       &mo 2         &kp RALT
+                                           &kp LGUI       &trans       &kp SPACE       &kp RET       &mo 3         &kp RALT
 //                                      ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯                                         
                                                                                                                      
+                        >;
+                };
+
+                raise_layer { 
+                        label = "Raise";
+                        bindings = <
+//        ╭─────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭─────────────┬─────────────┬──────────────┬─────────────────┬─────────────────╮
+//        |             |             | PAGE UP /UP   |              | PRINTSCREEN     | |             |             |              |                 |                 |     
+   &trans    &trans        &trans       &hm PG_UP UP     &trans        &kp PRINTSCREEN      &trans         &trans       &trans         &trans              &trans          &trans
+//        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────────┼─────────────────┤
+//        |             | HOME / LEFT |  TAB          | END/ RIGHT   |                 | |             |             |              |                 |                 |    
+   &trans    &trans      &hm HOME LEFT   &kp TAB        &hm END RIGHT   &trans               &trans        &trans       &trans         &trans               &trans          &trans
+//        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────────┼─────────────────┤
+//        |             |             | PG_DN/DOWN    |              |                 | |             |             |              |                 |                 |     
+   &trans    &trans       &trans        &hm PG_DN DOWN   &trans        &trans               &trans         &trans       &trans         &trans              &trans           &trans
+//        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼──────────────┼─────────────────┴─────────────────╯
+//                                    |               |              |  SPACE          | |  ENTER      |             |  ALT         |   
+                                        &kp LGUI         &mo 3          &kp SPACE           &kp RET       &trans        &kp RALT
+//                                    ╰───────────────┴──────────────┴─────────────────╯ ╰─────────────┴─────────────┴──────────────╯                                         
+
                         >;
                 };
 
