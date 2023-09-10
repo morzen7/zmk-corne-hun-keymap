@@ -48,7 +48,7 @@
      &trans   &hm SQT A    &hm LGUI S     &hm LALT D    &hm LSHIFT F  &hm LCTRL G      &kp H         &kp J         &kp K             &kp L       &hm BSLH MINUS   &trans  
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
 //          |  y          |  x          |  c          |  v          |  b          | |  n          |  m          |  ö   ő          |  , .        |  -            |    
-     &trans    &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M       &hm NUMBER_0 LBKT &hm COMMA DOT  &kp FSLH       &trans 
+     &trans    &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M       &hm LBKT NUMBER_0 &hm COMMA DOT  &kp FSLH       &trans 
 //          ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┴───────────────╯
 //                                      |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |                           
                                            &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
