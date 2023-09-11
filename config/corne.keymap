@@ -62,11 +62,11 @@
                         label = "Lower";
                         bindings = <
 //          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//          |  '          | "           |  /          |  ()         |  =          | |             |   7         |  8          | 9           |  ESC        |     
-    &trans     &kp EXCL     &kp AT        &kp CARET     &kp LPAR      &kp AMPS         &trans        &kp N7       &kp N8       &kp N9         &kp ESC       &trans  
+//          |  '          | "           |  /          |  (         |  =          | |             |   7         |  8          | 9           |  ESC        |     
+    &trans     &kp EXCL     &kp AT        &kp CARET     &kp NUMBER_8   &kp AMPS         &trans        &kp N7       &kp N8       &kp N9         &kp ESC       &trans  
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//          |             |  +          |  %          | !           |  *          | |             |   4         |  5          | 6           | BACKSPACE   |     
-    &trans     &trans        &kp HASH      &kp PRCNT    &kp DLLR     &kp KP_MULTIPLY    &trans        &kp N4       &kp N5       &kp N6        &kp BSPC       &trans 
+//          |  +          |  %          |  !          | )           |  *          | |             |   4         |  5          | 6           | BACKSPACE   |     
+    &trans     &kp HASH      &kp PRCN      &kp DLLR     &kp LPAR     &kp KP_MULTIPLY    &trans        &kp N4       &kp N5       &kp N6        &kp BSPC       &trans 
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |             |             |             |             |             | |             |   1         |  2          | 3           | DEL         |     
     &trans     &trans        &trans        &trans       &trans         &trans          &trans         &kp N1       &kp N2       &kp N3        &kp DEL        &trans   
