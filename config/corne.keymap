@@ -47,11 +47,11 @@
 //          |  a    á     |  s   GUI    |  d   ALT    |  f   SHIFT  |  g   CTRL   | |  h          |  j          |  k              |  l          |  ü   ű        |    
      &trans   &hm SQT A    &hm LGUI S     &hm LALT D    &hm LSHIFT F  &hm LCTRL G      &kp H         &kp J         &kp K             &kp L       &hm BSLH MINUS   &trans  
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
-//          |  y          |  x          |  c          |  v          |  b          | |  n          |  m          |  ö   ő          |  , .        |  -            |    
-     &trans   &hm BSLH Z     &kp X         &kp C         &kp V         &kp B           &kp N         &kp M       &hm LBKT NUMBER_0 &hm DOT COMMA  &kp FSLH       &trans 
+//          |  y          |  x          |  c          |  v          |  b          | |  m          |  n          |  ö   ő          |  , .        |  -            |    
+     &trans   &hm BSLH Z     &kp X         &kp C         &kp V         &kp B           &kp M         &kp N       &hm LBKT NUMBER_0 &hm DOT COMMA  &kp FSLH       &trans 
 //          ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┴───────────────╯
-//                                      |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |                           
-                                           &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
+//                                      |  SHIFT      |             |  SPACE      | |  ENTER      |             |  ALT GR         |                           
+                                           &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp RALT
 //                                      ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────────╯                                         
 
                         >;
