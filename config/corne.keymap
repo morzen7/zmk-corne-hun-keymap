@@ -87,10 +87,10 @@
     &none      &trans       &kp AT        &kp CARET     &kp NUMBER_8   &kp AMPS         &none         &kp N7       &kp N8       &kp N9        &trans        &none  
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |             |  %          |  !          | )           |  *          | | 0           |   4         |  5          | 6           |             |     
-    &none      &trans       &kp PRCN      &kp DLLR     &kp LPAR     &kp KP_MULTIPLY   &KP GRAVE       &kp N4       &kp N5       &kp N6        &trans         &none 
+    &none      &trans       &kp PRCN      &kp DLLR     &kp LPAR     &kp KP_MULTIPLY   &kp GRAVE       &kp N4       &kp N5       &kp N6        &trans         &none 
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |             |  +          |  '          |             |             | | 0           |   1         |  2          | 3           |             |     
-    &none      &trans        &kp HASH      &kp EXCL        &none        &none         KP_NUMBER_0     &kp N1       &kp N2       &kp N3        &trans         &none   
+    &none      &trans        &kp HASH      &kp EXCL        &none        &none        &kp KP_NUMBER_0     &kp N1       &kp N2    &kp N3         &trans         &none   
 //          ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                      |             |             |             | |             |             |             |     
                                            &trans         &mo 3        &trans           &trans        &trans        &trans
