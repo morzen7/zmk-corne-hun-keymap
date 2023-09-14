@@ -13,7 +13,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -83,11 +83,11 @@
                         label = "Right";
                         bindings = <
 //          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//          |             | "           |  /          |  ()         |  =          | |             |   7         |  8          | 9           |             |     
-    &none      &trans       &kp AT        &kp CARET     &kp NUMBER_8   &kp AMPS         &none         &kp N7       &kp N8       &kp N9        &trans        &none  
+//          |             | "           |  /          |  (          |  )          | |             |   7         |  8          | 9           |             |     
+    &none      &trans       &kp AT        &kp CARET     &kp NUMBER_8   &kp LPAR        &none         &kp N7       &kp N8       &kp N9        &trans        &none  
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//          |             |  %          |  !          | ()          |  *          | |             |   4         |  5          | 6           |             |     
-    &none      &trans       &kp PRCN      &kp DLLR     &kp LPAR     &kp KP_MULTIPLY    &none         &kp N4       &kp N5        &kp N6        &trans         &none 
+//          |             |  %          |  !          | =           |  *          | |             |   4         |  5          | 6           |             |     
+    &none      &trans       &kp PRCN      &kp DLLR      &kp AMPS    &kp KP_MULTIPLY    &none         &kp N4       &kp N5        &kp N6        &trans       &none 
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |             |  +          |  '          |             |             | | 0           |   1         |  2          | 3           |             |     
     &none      &trans        &kp HASH      &kp EXCL        &none        &none         &kp KP_N0      &kp N1       &kp N2       &kp N3         &trans        &none   
