@@ -42,13 +42,13 @@
                         bindings = <
 //          ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────────┬─────────────┬───────────────╮
 //          |  ALT          |  w  q       |  e   é      |  r          |  t  z       | |  u    ú     |  i   í      |  o  ó           |  p          |    ESC        | 
-     &none     &LALT           &hm W Q       &hm SEMI E    &kp R         &hm Y T         &hm RBKT U    &hm GRAVE I   &hm EQUAL O       &kp P           &kp ESC       &none      
+     &none     &kp LALT        &hm W Q       &hm SEMI E    &kp R         &hm Y T         &hm RBKT U    &hm GRAVE I   &hm EQUAL O       &kp P           &kp ESC       &none      
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
 //          |  SHIFT        |  a    á     |  s          |  d          |  f  g       | |  h          |  j          |  k              |  l          |    BSPC       |    
-     &none     &LSHIFT         &hm SQT A     &kp S        &kp D          &hm G F         &kp H         &kp J         &kp K             &kp L           &kp BSPC      &none  
+     &none     &kp LSHIFT      &hm SQT A     &kp S        &kp D          &hm G F         &kp H         &kp J         &kp K             &kp L           &kp BSPC      &none  
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
 //          |  CTRL         | y  í        |  x          |  c          |  v          | |  b          |  n  m       |  , .            |  -          |    TAB        |    
-     &none     &LCTRL         &hm RA(J) Z    &kp X         &kp C         &kp V           &kp B         &hm N M       &hm DOT COMMA     &kp FSLH        &kp TAB       &none
+     &none     &kp LCTRL      &hm RA(J) Z    &kp X         &kp C         &kp V           &kp B         &hm N M       &hm DOT COMMA     &kp FSLH        &kp TAB       &none
 //          ╰───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┴───────────────╯
 //                                        |             |             |  SPACE      | |  ENTER      |             |  ALT GR         |                           
                                              &kp LGUI       &mo 1        &kp SPACE       &kp RET       &mo 2         &kp RALT
@@ -90,7 +90,7 @@
     &none      &trans       &kp PRCN      &kp DLLR     &kp LPAR     &kp KP_MULTIPLY   &KP GRAVE       &kp N4       &kp N5       &kp N6        &trans         &none 
 //          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |             |  +          |  '          |             |             | | 0           |   1         |  2          | 3           |             |     
-    &none      &trans        &kp HASH      &kp EXCL        &none          &none       KP_NUMBER_0     &kp N1       &kp N2       &kp N3        &trans         &none   
+    &none      &trans        &kp HASH      &kp EXCL        &none        &none         KP_NUMBER_0     &kp N1       &kp N2       &kp N3        &trans         &none   
 //          ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                      |             |             |             | |             |             |             |     
                                            &trans         &mo 3        &trans           &trans        &trans        &trans
