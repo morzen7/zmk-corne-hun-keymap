@@ -65,7 +65,7 @@
 //        |             |             |               | UP(PAGE UP)  | r               | |  ü(ű)          | UP(PAGE UP)   |   ö(ő)           | PRINTSCREEN    |                 |    
    &none     &trans        &none        &none           &hm PG_UP UP   &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0  &kp PRINTSCREEN  &trans             &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼──────────────────┼────────────────┼─────────────────┤
-//        |             |             | LEFT(HOME)    |  TAB         | RIGHT(END)      | |  LEFT(HOME)    |  TAB          | RIGHT(END)       |                |  BSPC           |    
+//        |             |  á          | LEFT(HOME)    |  TAB         | RIGHT(END)      | |  LEFT(HOME)    |  TAB          | RIGHT(END)       |                |  BSPC           |    
    &none     &trans        &kp SQT      &hm HOME LEFT   &kp TAB        &hm END RIGHT       &hm HOME LEFT     &kp TAB        &hm END RIGHT        &trans          &kp BSPC          &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼──────────────────┼────────────────┼─────────────────┤
 //        |             |             |               | DOWN(PG_DN)  |                 | |   m            | DOWN(PG_DN)   |                  |                |                 |     
@@ -84,10 +84,10 @@
                         bindings = <
 //          ╭─────────────────┬─────────────┬─────────────────┬─────────────────┬─────────────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //          |   ~             |  " (')      |  #              |   /  \          |  ( )                | |             |   7         |  8          | 9           |             |     
-    &none     &kp LA(NUMBER_1)  &hm EXCL AT    &KP LA(X)        &hm CARET LA(W)  &hm LPAR LS(NUMBER_8)     &none         &kp N7       &kp N8        &kp N9          &trans        &none  
+    &none     &kp LA(NUMBER_1)  &hm EXCL AT    &kp LA(X)        &hm CARET LA(W)  &hm LPAR LS(NUMBER_8)     &none         &kp N7       &kp N8        &kp N9          &trans        &none  
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  *              |  %          |  "|"            |  &              |  [ ]                | | 0           |   4         |  5          | 6           |             |     
-    &none     &kp KP_MULTIPLY    &kp PRCNT     &KP LA(W)         &KP LA(C)         &hm LA(G) LA(F)        &kp KP_N0       &kp N4       &kp N5       &kp N6          &trans        &none 
+    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp LA(W)         &kp LA(C)         &hm LA(G) LA(F)        &kp KP_N0       &kp N4       &kp N5       &kp N6          &trans        &none 
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  !              |  +          |  !              |  <>             |  { }                | |             |   1         |  2          | 3           |             |     
     &none      &kp DLLR          &kp HASH     &kp LS(NUMBER_6)   &hm LA(M) LA(Y)   &hm LA(N) LA(B)         &none          &kp N1       &kp N2       &kp N3          &trans        &none   
