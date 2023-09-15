@@ -41,14 +41,14 @@
                         label = "Base";
                         bindings = <
 //          ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────────┬─────────────┬───────────────╮
-//          |  ALT          |  w  q       |  e   é      |  r          |  t  z       | |  u    ú     |  i   í      |  o  ó           |  p          |    ESC        | 
-     &none     &kp LALT        &hm W Q       &hm SEMI E    &kp R         &hm Y T         &hm RBKT U    &hm RA(J) I   &hm EQUAL O       &kp P           &kp ESC       &none      
+//          |  ALT          |  q          |  w          |  r          |  t(r)       | |  u(ú)       |  i(í)       |  o(ó)           |  p          |    ESC        | 
+     &none     &kp LALT        &kp Q        &kp W         &hm SEMI E    &hm R T         &hm RBKT U    &hm RA(J) I   &hm EQUAL O       &kp P           &kp ESC       &none      
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
-//          |  SHIFT        |  a    á     |  s          |  d          |  f  g       | |  j h        |  k          |  l              |  BSPC       |    DEL        |    
-     &none     &kp LSHIFT      &hm SQT A     &kp S        &kp D          &hm G F         &hm H J       &kp K         &kp L             &kp BSPC        &kp DEL       &none  
+//          |  SHIFT        |  a(á)       |  s          |  d (shift)  |  f(g)       | |  j(h)       |  k          |  l              |  BSPC       |    DEL        |    
+     &none     &kp LSHIFT      &hm SQT A     &kp S        &hm LSHIFT D   &hm G F         &hm H J       &kp K         &kp L             &kp BSPC        &kp DEL      &none  
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
-//          |  CTRL         | y  í        |  x          |  c          |  v          | |  n  m       |  b          |  , .            |  -          |    TAB        |    
-     &none     &kp LCTRL      &hm GRAVE Z    &kp X         &kp C         &kp V           &hm N M       &kp B        &hm DOT COMMA     &kp FSLH        &kp TAB       &none
+//          |  CTRL         |  y(z)       |  x          |  c          |  v          | |  n(m)       |  b          |  , (.)          |  -          |    TAB        |    
+     &none     &kp LCTRL      &hm Y Z       &kp X         &kp C         &kp V            &hm N M       &kp B        &hm DOT COMMA     &kp FSLH        &kp TAB       &none
 //          ╰───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┴───────────────╯
 //                                        |             |             |  SPACE      | |  ENTER      |             |  ALT GR         |                           
                                              &kp LGUI       &mo 1        &kp SPACE       &kp RET       &mo 2         &kp RALT
