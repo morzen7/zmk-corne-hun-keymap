@@ -83,14 +83,14 @@
                         label = "SIMBOL";
                         bindings = <
 //          ╭─────────────────┬─────────────┬─────────────────┬─────────────────┬─────────────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//          |   ~             |  " (')      |  #              |   /  \          |  ( )                | |             |   7         |  8          | 9           |             |     
-    &none     &kp LA(NUMBER_1)  &hm EXCL AT    &kp LA(X)        &hm CARET LA(W)  &hm LPAR LS(NUMBER_8)     &none         &kp N7       &kp N8        &kp N9          &trans        &none  
+//          |   ~             |  " (')      |  #              |    / \          |  ( )                | |             |   7         |  8          | 9           |             |     
+    &none     &kp RA(NUMBER_1)  &hm EXCL AT    &kp RA(X)        &hm RA(W) CARET   &hm LPAR LS(NUMBER_8)     &none         &kp N7       &kp N8        &kp N9          &trans        &none  
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  *              |  %          |  "|"            |  &              |  [ ]                | | 0           |   4         |  5          | 6           |             |     
-    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp LA(W)         &kp LA(C)         &hm LA(G) LA(F)        &kp KP_N0       &kp N4       &kp N5       &kp N6          &trans        &none 
+    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp RA(W)         &kp RA(C)         &hm RA(G) RA(F)        &kp KP_N0       &kp N4       &kp N5       &kp N6          &trans        &none 
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  !              |  +          |  !              |  <>             |  { }                | |             |   1         |  2          | 3           |             |     
-    &none      &kp DLLR          &kp HASH     &kp LS(NUMBER_6)   &hm LA(M) LA(Y)   &hm LA(N) LA(B)         &none          &kp N1       &kp N2       &kp N3          &trans        &none   
+    &none      &kp DLLR          &kp HASH     &kp LS(NUMBER_6)   &hm RA(M) RA(Y)   &hm RA(N) RA(B)         &none          &kp N1       &kp N2       &kp N3          &trans        &none   
 //          ╰─────────────────┴─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                          |                 |                 |                     | |             |             |             |     
                                                  &trans              &mo 3           &trans                &trans        &trans        &trans
