@@ -41,14 +41,14 @@
                         label = "Base";
                         bindings = <
 //          ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────────┬─────────────┬───────────────╮
-//          |  ALT          |  q          |  w          |  e(é)       |  t          | |  u(ú)       |  i(í)       |  o(ó)           |  p          |    ESC        | 
-     &none     &kp LALT        &kp Q        &kp W         &hm SEMI E    &kp T           &hm RBKT U    &hm RA(J) I   &hm EQUAL O       &kp P           &kp ESC       &none      
+//          |  ALT          |  q          |  w          |  e(é)       |  t (r)      | |  u(ú)       |  i(í)       |  o(ó)           |  p          |    ESC        | 
+     &none     &kp LALT        &kp Q        &kp W         &hm SEMI E    &hm R T          &hm RBKT U    &hm RA(J) I   &hm EQUAL O       &kp P           &kp ESC       &none      
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
-//          |  SHIFT        |  a          |  s          |  d (shift)  |  f(g)       | |  j(h)       |  k          |  l              |  BSPC       |    DEL        |    
-     &none     &kp LSHIFT      &kp A        &kp S         &hm LSHIFT D   &hm G F         &hm H J       &kp K         &kp L             &kp BSPC        &kp DEL      &none  
+//          |  SHIFT        |  a (á)      |  s          |  d (shift)  |  f(g)       | |  j(h)       |  k          |  l              |  BSPC       |    DEL        |    
+     &none     &kp LSHIFT      &hm SQT A    &kp S         &hm LSHIFT D   &hm G F         &hm H J       &kp K         &kp L             &kp BSPC        &kp DEL      &none  
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
-//          |  CTRL         |  z(y)       |  x          |  c          |  v          | |  n          |  b          |  , (.)          |  -          |   ALT GR      |    
-     &none     &kp LCTRL      &hm Z Y       &kp X         &kp C         &kp V            &kp N         &kp B        &hm DOT COMMA     &kp FSLH        &kp RALT      &none
+//          |  CTRL         |  z(y)       |  x          |  c          |  v          | |  n(m)       |  b          |  , (.)          |  -          |   ALT GR      |    
+     &none     &kp LCTRL      &hm Z Y       &kp X         &kp C         &kp V            &hm M N       &kp B        &hm DOT COMMA     &kp FSLH        &kp RALT      &none
 //          ╰───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┴───────────────╯
 //                                        |  TAB        |             |  SPACE      | |  ENTER      |             |  GUI            |                           
                                              &kp TAB       &mo 1        &kp SPACE        &kp RET       &mo 2         &kp LGUI
@@ -61,19 +61,19 @@
                 lower_layer { 
                         label = "NAVI";
                         bindings = <
-//        ╭─────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭────────────────┬───────────────┬──────────────────┬────────────────┬─────────────────╮
-//        |             |             |               | UP(PAGE UP)  | r               | |  ü(ű)          | UP(PAGE UP)   |   ö(ő)           | PRINTSCREEN    |                 |    
-   &none     &trans        &none        &none           &hm PG_UP UP   &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0  &kp PRINTSCREEN  &trans             &none
-//        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼──────────────────┼────────────────┼─────────────────┤
-//        |             |  á          | LEFT(HOME)    |  TAB         | RIGHT(END)      | |  LEFT(HOME)    |  TAB          | RIGHT(END)       |                |  BSPC           |    
-   &none     &trans        &kp SQT      &hm HOME LEFT   &kp TAB        &hm END RIGHT       &hm HOME LEFT     &kp TAB        &hm END RIGHT        &trans          &kp BSPC          &none
-//        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼──────────────────┼────────────────┼─────────────────┤
-//        |             |             |               | DOWN(PG_DN)  |                 | |   m            | DOWN(PG_DN)   |                  |                |                 |     
-   &none     &trans       &none         &none           &hm PG_DN DOWN   &none               &kp M         &hm PG_DN DOWN     &trans             &trans          &trans            &none
-//        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼──────────────────┼────────────────┴─────────────────╯
-//                                    |               |              |                 | |                |               |                  |   
-                                        &trans           &trans         &trans              &trans           &mo 3          &trans
-//                                    ╰───────────────┴──────────────┴─────────────────╯ ╰────────────────┴───────────────┴──────────────────╯                                         
+//        ╭─────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭────────────────┬───────────────┬────────────────────┬────────────────┬─────────────────╮
+//        |             |             |               |              | r               | |  ü(ű)          | UP(PAGE UP)   |   ö(ő)             | PRINTSCREEN    |                 |    
+   &none     &trans        &none        &none           &none          &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0    &kp PRINTSCREEN   &trans             &none
+//        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
+//        |             |             |               |              |                 | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  BSPC           |    
+   &none     &trans        &none        &none            &none         &none                &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT   &trans          &kp BSPC          &none
+//        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
+//        |             |             |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
+   &none     &trans       &none         &none           &none           &none                &kp HOME       &hm PG_DN DOWN    &kp END            &trans            &trans            &none
+//        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┴─────────────────╯
+//                                    |               |              |                 | |                |               |                    |   
+                                        &trans           &trans         &trans              &trans           &mo 3          &trans 
+//                                    ╰───────────────┴──────────────┴─────────────────╯ ╰────────────────┴───────────────┴────────────────────╯                                         
 
                         >;
                 };
@@ -83,14 +83,14 @@
                         label = "SIMBOL";
                         bindings = <
 //          ╭─────────────────┬─────────────┬─────────────────┬─────────────────┬─────────────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//          |   ~             |  " (')      |  #              |    / \          |  ( )                | |             |   7         |  8          | 9           |             |     
-    &none     &kp RA(NUMBER_1)  &hm EXCL AT    &kp RA(X)        &hm RA(Q) CARET  &hm LPAR LS(NUMBER_8)      &none         &kp N7       &kp N8       &kp N9          &trans        &none  
+//          |   ~             |  " (')      |  #              |    / \          |  ( )                | |  7          |   8         |  9          |             |             |     
+    &none     &kp RA(NUMBER_1)  &hm EXCL AT    &kp RA(X)        &hm RA(Q) CARET  &hm LPAR LS(NUMBER_8)     &kp N7         &kp N8       &kp N9       &none          &trans        &none  
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//          |  *              |  %          |  "|"            |  &              |  [ ]                | | 0           |   4         |  5          | 6           |             |     
-    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp RA(W)         &kp RA(C)         &hm RA(G) RA(F)        &kp KP_N0       &kp N4       &kp N5       &kp N6          &trans        &none 
+//          |  *              |  %          |  "|"            |  &              |  [ ]                | | 4           |   5         |  6          |  0          |             |     
+    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp RA(W)         &kp RA(C)         &hm RA(G) RA(F)        &kp N4          &kp N5       &kp N6        &kp KP_N0     &trans        &none 
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//          |  !              |  +          |  _              |  <>             |  { }                | |             |   1         |  2          | 3           |             |     
-    &none      &kp DLLR          &kp HASH      &kp LS(FSLH)     &hm RA(Z) RA(M)    &hm RA(N) RA(B)         &none          &kp N1       &kp N2       &kp N3          &trans        &none   
+//          |  !              |  +          |  _              |  <>             |  { }                | |  1          |   2         |  3          |             |             |     
+    &none      &kp DLLR          &kp HASH      &kp LS(FSLH)     &hm RA(Z) RA(M)    &hm RA(N) RA(B)         &kp N1         &kp N2       &kp N3       &none          &trans        &none   
 //          ╰─────────────────┴─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                          |                 |                 |                     | |             |             |             |     
                                                  &trans              &mo 3           &trans                &trans        &trans        &trans
