@@ -68,8 +68,8 @@
 //        |             |  á          |               |              | g               | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  BSPC           |    
    &none     &trans        &kp SQT      &none            &none         &kp G               &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT   &trans          &kp BSPC          &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
-//        |             |  y          |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
-   &none     &trans        &kp Y         &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END            &trans            &trans            &none
+//        |             |  z          |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
+   &none     &trans        &kp Z        &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END            &trans            &trans            &none
 //        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┴─────────────────╯
 //                                    |               |              |                 | |                |               |                    |   
                                         &trans           &trans         &trans              &trans           &mo 3          &trans 
