@@ -56,7 +56,7 @@
      &none     &kp LSHIFT      &hm SQT A    &kp S         &hm LSHIFT D   &hm G F         &hm H J       &kp K         &kp L             &kp BSPC              &kp DEL      &none  
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┤
 //          |  CTRL         |  z(y)       |  x          |  c          |  v          | |  n(m)       |  b          |  , (.)          |  - (_)            |   ALT GR      |    
-     &none     &kp LCTRL      &hm Z Y       &kp X         &kp C         &kp V            &hm M N       &kp B        &hm DOT COMMA     &kp LS(FSLH) FSLH     &kp RALT      &none
+     &none     &kp LCTRL      &hm Z Y       &kp X         &kp C         &kp V            &hm M N       &kp B        &hm DOT COMMA     &hm LS(FSLH) FSLH     &kp RALT      &none
 //          ╰───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────╯
 //                                        |  TAB        |             |  SPACE      | |  ENTER      |             |  GUI            |                           
                                              &kp TAB       &mo 1        &kp SPACE        &kp RET       &mo 2         &kp LGUI
