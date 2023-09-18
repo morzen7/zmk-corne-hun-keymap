@@ -62,14 +62,14 @@
                         label = "NAVI";
                         bindings = <
 //        ╭─────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭────────────────┬───────────────┬────────────────────┬────────────────┬─────────────────╮
-//        |             |             |               |              | r               | |  ü(ű)          | UP(PAGE UP)   |   ö(ő)             | PRINTSCREEN    |                 |    
-   &none     &trans        &none        &none           &none          &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0    &kp PRINTSCREEN   &trans             &none
+//        |             |             | é             |              | r               | |  ü(ű)          | UP(PAGE UP)   |   ö(ő)             | PRINTSCREEN    |                 |    
+   &none     &trans        &none        &kp SEMI        &none          &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0    &kp PRINTSCREEN   &trans             &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
-//        |             |             |               |              |                 | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  BSPC           |    
-   &none     &trans        &none        &none            &none         &none                &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT   &trans          &kp BSPC          &none
+//        |             |  á          |               |              | g               | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  BSPC           |    
+   &none     &trans        &kp SQT      &none            &none         &kp G               &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT   &trans          &kp BSPC          &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
-//        |             |             |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
-   &none     &trans       &none         &none           &none           &none                &kp HOME       &hm PG_DN DOWN    &kp END            &trans            &trans            &none
+//        |             |  y          |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
+   &none     &trans        &kp Y         &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END            &trans            &trans            &none
 //        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┴─────────────────╯
 //                                    |               |              |                 | |                |               |                    |   
                                         &trans           &trans         &trans              &trans           &mo 3          &trans 
