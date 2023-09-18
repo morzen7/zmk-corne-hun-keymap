@@ -22,16 +22,18 @@
 
         combos{
                 compatible = "zmk,combos";
-                combo_enter {
+                combo_alt_shift_up {
                     timeout-ms = <50>;
                     key-positions = <6 18>;
-                    bindings = <&kp BACKSPACE>;
+                    bindings = <&kp LA(LS(UP_ARROW))>;
                 };
-                combo_esc {
+
+                combo_alt_shift_down {
                     timeout-ms = <50>;
-                    key-positions = <6 7>;
-                    bindings = <&kp DEL>;
+                    key-positions = <18 30>;
+                    bindings = <&kp LA(LS(DOWN_ARROW))>;
                 };
+
         };
         
         keymap {
@@ -42,7 +44,7 @@
                         bindings = <
 //          ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────────┬─────────────┬───────────────╮
 //          |  ALT          |  q          |  w          |  e(é)       |  t (r)      | |  u(ú)       |  i(í)       |  o(ó)           |  p          |    ESC        | 
-     &none     &kp LALT        &kp Q        &kp W         &hm SEMI E    &hm R T          &hm RBKT U    &hm RA(J) I   &hm EQUAL O       &kp P           &kp ESC       &none      
+     &none     &kp LALT        &kp Q        &kp W         &hm SEMI E    &hm R T          &hm RBKT U    &hm RA(J) I   &hm EQUAL O       &kp P           &kp ESC      &none      
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼─────────────┼───────────────┤
 //          |  SHIFT        |  a (á)      |  s          |  d (shift)  |  f(g)       | |  j(h)       |  k          |  l              |  BSPC       |    DEL        |    
      &none     &kp LSHIFT      &hm SQT A    &kp S         &hm LSHIFT D   &hm G F         &hm H J       &kp K         &kp L             &kp BSPC        &kp DEL      &none  
@@ -63,13 +65,13 @@
                         bindings = <
 //        ╭─────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭────────────────┬───────────────┬────────────────────┬────────────────┬─────────────────╮
 //        |             |             | é             |              | r               | |  ü(ű)          | UP(PAGE UP)   |   ö(ő)             | PRINTSCREEN    |                 |    
-   &none     &trans        &none        &kp SEMI        &none          &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0    &kp PRINTSCREEN   &trans             &none
+   &none     &trans        &none        &kp SEMI        &none          &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0    &kp PRINTSCREEN   &trans            &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
 //        |             |  á          |               |              | g               | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  BSPC           |    
-   &none     &trans        &kp SQT      &none            &none         &kp G               &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT   &trans          &kp BSPC          &none
+   &none     &trans        &kp SQT      &none            &none         &kp G               &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT     &trans          &kp BSPC          &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
 //        |             |  z          |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
-   &none     &trans        &kp Z        &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END            &trans            &trans            &none
+   &none     &trans        &kp Z        &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END             &trans            &trans            &none
 //        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┴─────────────────╯
 //                                    |               |              |                 | |                |               |                    |   
                                         &trans           &trans         &trans              &trans           &mo 3          &trans 
@@ -83,14 +85,14 @@
                         label = "SIMBOL";
                         bindings = <
 //          ╭─────────────────┬─────────────┬─────────────────┬─────────────────┬─────────────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//          |   ~             |  " (')      |  #              |    / \          |  ( )                | |  7          |   8         |  9          |             |             |     
-    &none     &kp RA(NUMBER_1)  &hm EXCL AT    &kp RA(X)        &hm RA(Q) CARET  &hm LPAR LS(NUMBER_8)     &kp N7         &kp N8       &kp N9       &none          &trans        &none  
+//          |   ~             |  #          |  " (')          |    / \          |  ( )                | |  7          |   8         |  9          |             |             |     
+    &none     &kp RA(NUMBER_1)   &kp RA(X)     &hm EXCL AT      &hm RA(Q) CARET  &hm LPAR LS(NUMBER_8)     &kp N7         &kp N8       &kp N9       &none          &trans        &none  
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//          |  *              |  %          |  "|"            |  &              |  [ ]                | | 4           |   5         |  6          |  0          |             |     
-    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp RA(W)         &kp RA(C)         &hm RA(G) RA(F)        &kp N4          &kp N5       &kp N6        &kp KP_N0     &trans        &none 
+//          |  *              |  %          |  =              |  &              |  [ ]                | |  4          |   5         |  6          |  0          |             |     
+    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp LS(N7)        &kp RA(C)         &hm RA(G) RA(F)         &kp N4          &kp N5       &kp N6        &kp KP_N0     &trans       &none 
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//          |  !              |  +          |  _              |  <>             |  { }                | |  1          |   2         |  3          |             |             |     
-    &none      &kp DLLR          &kp HASH      &kp LS(FSLH)     &hm RA(Z) RA(M)    &hm RA(N) RA(B)         &kp N1         &kp N2       &kp N3       &none          &trans        &none   
+//          |  !              |  +          |  "|"            |  <>             |  { }                | |  1          |   2         |  3          |             |             |     
+    &none      &kp DLLR          &kp HASH      &kp RA(W)       &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp N1         &kp N2       &kp N3       &none          &trans        &none   
 //          ╰─────────────────┴─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                          |                 |                 |                     | |             |             |             |     
                                                  &trans              &mo 3           &trans                &trans        &trans        &trans
