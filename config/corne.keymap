@@ -95,7 +95,7 @@
     &none     &kp RA(NUMBER_1)   &kp RA(X)     &hm EXCL AT      &hm RA(Q) CARET  &hm LPAR LS(NUMBER_8)     &kp N7         &kp N8       &kp N9       &none          &trans        &none  
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  *              |  %          |  =              |  & (@)          |  [ ]                | |  4          |   5         |  6          |  0          |             |     
-    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp LS(N7)       &hm RA(V) RA(C)    &hm RA(G) RA(F)         &kp N4          &kp N5       &kp N6       &kp N0         &trans       &none 
+    &none     &kp KP_MULTIPLY    &kp PRCNT     &kp LS(N7)       &hm RA(V) RA(C)    &hm RA(G) RA(F)         &kp N4          &kp N5       &kp N6       &kp KP_NUMBER_0   &trans       &none 
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  !              |  +          |  "|"            |  <>             |  { }                | |  1          |   2         |  3          | ctrl + /    |             |     
     &none      &kp DLLR          &kp HASH      &kp RA(W)       &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp N1         &kp N2       &kp N3      &kp LC(KP_DIVIDE) &trans        &none   
