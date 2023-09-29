@@ -98,7 +98,7 @@
     &none     &kp KP_MULTIPLY    &kp PRCNT     &kp LS(N7)       &hm RA(V) RA(C)    &hm RA(G) RA(F)         &kp N4          &kp N5       &kp N6       &kp N0         &trans       &none 
 //          ├─────────────────┼─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //          |  !              |  +          |  "|"            |  <>             |  { }                | |  1          |   2         |  3          | ctrl + /    |             |     
-    &none      &kp DLLR          &kp HASH      &kp RA(W)       &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp N1         &kp N2       &kp N3      & LC(KP_DIVIDE) &trans        &none   
+    &none      &kp DLLR          &kp HASH      &kp RA(W)       &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp N1         &kp N2       &kp N3      &kp LC(KP_DIVIDE) &trans        &none   
 //          ╰─────────────────┴─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                          |                 |                 |                     | |             |             |             |     
                                                  &trans              &mo 3           &trans                &trans        &trans        &trans
